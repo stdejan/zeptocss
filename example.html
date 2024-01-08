@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>ZeptoCSS</title>
+    <link rel="stylesheet" href="zepto.css">
+</head>
+
+<body style="max-width: 1024px; margin: auto;">
+    <section>
+        <h1>ZeptoCSS</h1>
+        <p>Minimalistic CSS framework</p>
+    </section>
+
+    <section>
+        <h2>Typography</h2>
+
+        <section>
+            <h3>Paragraph:</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet atque delectus dignissimos eaque eum fugiat itaque magnam nemo nulla obcaecati, porro praesentium sunt velit. Asperiores consectetur eius facere laudantium sunt?</p>
+        </section>
+
+        <section>
+            <h3>Small text:</h3>
+            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut beatae consequuntur, debitis et expedita obcaecati, omnis quae quam suscipit totam veritatis vero! Doloremque eveniet fugiat id necessitatibus veritatis? Cupiditate?</small>
+        </section>
+
+        <section>
+            <h3>Linked text:</h3>
+            <a href="#">Link to somewhere</a>
+        </section>
+
+        <section>
+            <h3>Highlight:</h3>
+            <mark>Highlighted text</mark>
+        </section>
+
+        <section>
+            <h3>Other headings:</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </section>
+    </section>
+
+    <section>
+        <h2>Form elements</h2>
+    </section>
+
+    <section>
+        <form>
+            <div>
+                <label for="name">Text input:</label>
+                <input type="text" placeholder="ZeptoCSS" value="" id="name">
+            </div>
+
+            <div>
+                <label for="text">Textarea:</label>
+                <textarea placeholder="ZeptoCSS" id="text"></textarea>
+            </div>
+
+            <div>
+                <label for="number">Numeric input:</label>
+                <input type="number" placeholder="28" id="number">
+            </div>
+
+            <div>
+                <label for="options">Select box:</label>
+                <select id="options">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="color">Color picker:</label>
+                <input type="color" id="color">
+            </div>
+
+            <div>
+                <label for="date">Date picker:</label>
+                <input type="date" id="date">
+            </div>
+
+            <div>
+                <label for="time">Time picker:</label>
+                <input type="time" id="time">
+            </div>
+
+            <div>
+                <p>Radio buttons:</p>
+                <div>
+                    <label>
+                        <input name="radio" type="radio" checked>
+                        <span>Radio 1</span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input name="radio" type="radio">
+                        <span>Radio 2</span>
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <p>Checkboxes:</p>
+                <div>
+                    <label>
+                        <input name="checkbox" type="checkbox">
+                        <span>Checkbox 1</span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input name="checkbox" type="checkbox">
+                        <span>Checkbox 2</span>
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <p>Choose file:</p>
+                <input type="file" id="file">
+            </div>
+
+            <div>
+                <label for="range">Range:</label>
+                <input type="range" min="1" max="100" value="50" id="range">
+            </div>
+
+            <div>
+                <button>Button</button>
+            </div>
+        </form>
+    </section>
+
+    <section>
+        <section>
+            <h2>Lists</h2>
+            <p>Unordered and ordered lists</p>
+        </section>
+
+        <div>
+            <h3>Unordered list:</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Ordered list:</h3>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </div>
+    </section>
+
+    <section>
+        <section>
+            <h2>Table</h2>
+            <p>If you want to use responsive table you should add on parent div <mark>style="overflow-x: auto;"</mark></p>
+        </section>
+
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>First name</th>
+                        <th>Last name</th>
+                        <th>Age</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dejan</td>
+                        <td>Stanković</td>
+                        <td>28</td>
+                        <td>Serbia</td>
+                    </tr>
+                    <tr>
+                        <td>Dejan</td>
+                        <td>Stanković</td>
+                        <td>28</td>
+                        <td>Serbia</td>
+                    </tr>
+                    <tr>
+                        <td>Dejan</td>
+                        <td>Stanković</td>
+                        <td>28</td>
+                        <td>Serbia</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <section>
+            <h2>Image</h2>
+            <p>Responsive image</p>
+        </section>
+
+        <img src="blob/nature.jpeg" alt="Responsive image">
+    </section>
+
+    <section>
+        <section>
+            <h2>Article</h2>
+            <p>Represented as card</p>
+        </section>
+
+        <article>
+            <img src="blob/nature.jpeg" alt="Article">
+
+            <h3>Article card</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At expedita, natus. Consectetur cupiditate doloribus enim expedita ipsa mollitia natus praesentium quas rem! Doloribus illo, magnam possimus quas similique ullam velit.</p>
+
+            <footer>
+                Footer text
+            </footer>
+        </article>
+    </section>
+</body>
+</html>
